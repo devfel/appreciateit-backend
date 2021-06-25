@@ -1,8 +1,11 @@
 {
-   "type": "postgres",
-   "host": "localhost",
-   "port": 5432,
-   "username": "postgres",
-   "password": "docker",
-   "database": "appreciateit_pg"
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "docker",
+  "database": "appreciateit_pg",
+  "cli": {
+    "migrationsDir": "src/database/migrations"
+  }
 }
