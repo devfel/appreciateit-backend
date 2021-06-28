@@ -6,6 +6,8 @@ class ListTagsController {
     const listTagsService = new ListTagsService();
 
     const tags = await listTagsService.execute();
+    // Option to customize tag name  without using the class transformer library
+    // tags = tags.map((tag) => ({...tag, nameCustom: `#${tag.name}`}));
 
     return response.json(tags);
   }
