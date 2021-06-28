@@ -9,6 +9,7 @@ class ListUserReceivedComplimentsService {
       where: {
         user_receiver: user_id,
       },
+      relations: ["userSender", "userReceiver", "tag"], //get all informations from the relations
     });
 
     return compliments;
