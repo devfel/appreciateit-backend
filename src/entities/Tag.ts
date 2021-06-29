@@ -2,6 +2,7 @@ import { Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn } fro
 import { v4 as uuid } from "uuid";
 import { Expose } from "class-transformer";
 
+//Entity for tags to be selected while making compliments
 @Entity("tags")
 class Tag {
   @PrimaryColumn()
